@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>RPG</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<center>
+		<div class="flex-container" id="startmenu">
+			<div><img src="imgs/logo.png" height=200px></div>
+			<div><button id="startgame">START</button></div>
+			<div><button><a href="#tutorial">HOW TO PLAY</a></button></div>
+		</div>
+		<div class="flex-container" id="battlemenu">
+			<div><button id="fight-btn">FIGHT</button>
+			<button id="heal-btn">HEAL</button>
+			<button id="flee-btn">FLEE</button></div>
+		</div>
+		<div class="flex-container" id="fbattlemenu">
+			<div><button id="fight-btnf">FIGHT</button>
+			<button id="heal-btnf">HEAL</button></div>
+		</div>
+		<div id="battleprompt">
+			"PROMPT"
+		</div>
+		<div id="playerHP">  100</div>
+		<div id="enemyHP">  100</div>
+		<canvas id="gamearea" height=600 width=800></canvas>
+		</center>
+		<br><br><br>
+		
+		<p id="tutorial">How to play:<br><br>
+		Use the arrow keys to move and spacebar to interact.<br><br>
+		<img src="imgs/demo2.png" height=150px><br><br>
+		During a battle, choose one option.<br><br>
+			<button>FIGHT</button>
+			<button>HEAL</button>
+			<button>FLEE</button>
+		<br><br>
+		Break the Haunted Castle's magic seal and defeat the Dark Knight.<br>
+		(But you must first find both magic crystals...)<br><br>
+			<img src="imgs/demo1.png" height=100px>
+		</p>
+		<br>
+		<center>Made by Romanix57</center>
+		<script src="script.js"></script>
+	</body>
+</html>

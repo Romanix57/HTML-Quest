@@ -1,0 +1,121 @@
+body {
+	background-image: url('imgs/background.png');
+	background-size:100%;
+}
+
+canvas {
+	border:1px solid black;
+	background-image: url('imgs/map2.png');
+	}
+.flexcontainer{
+	display:flex;
+}
+#startmenu {
+	flex-direction:column;
+	justify-content:center;
+	position:absolute; 
+			z-index: 1;
+			margin-left:33%;
+			margin-top:10%
+}
+
+#battlemenu {
+	flex-direction:row;
+	justify-content:center;
+	position:absolute;
+	z-index: 1;
+			margin-left:39%;
+			margin-top:35%;
+}
+#fbattlemenu {
+	flex-direction:row;
+	justify-content:center;
+	position:absolute;
+	z-index: 1;
+			margin-left:41%;
+			margin-top:35%;
+}
+
+#battleprompt {
+	display:flex;
+	background-color: rgba(36, 36, 130,0.7);
+	width:500px;
+	height:200px;
+	border-style: ridge;
+	border-width:5px;
+	align-items: center;
+	justify-content:center;
+	position:absolute;
+	z-index: 1;
+			margin-left:30%;
+			margin-top:28%;
+	color:white;
+	font-size:30;
+}
+
+#playerHP {
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	height:120px;
+	width:313px;
+	position:absolute;
+	z-index: 1;
+	margin-left:22%;
+	margin-top:5%;
+	background-image:url('imgs/player-HP.png');
+	font-family:"Impact";
+	font-size:50;
+	background-size:100%100%;
+}
+
+#enemyHP {
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	height:120px;
+	width:313px;
+	position:absolute;
+	z-index: 1;
+	margin-left:55%;
+	margin-top:5%;
+	background-image:url('imgs/enemy-HP.png');
+	font-family:"Impact";
+	font-size:50;
+	background-size:100%100%;
+}
+
+button {
+	height:50px;
+	padding-left:10px;
+	padding-right:10px;
+	background-image:url('imgs/btn-bg.jpg');
+	font-family:"Times New Roman";
+	font-size:20;
+	background-size:100%100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+p {
+	text-align:center;
+	font-family:"Times New Roman";
+	font-size:30;
+}
+
+#gamearea {
+	position:relative; 
+			z-index: 0;
+}
+
+#cheat1 {
+	background-color:rgba(255,255,255,0.05);
+	width:10px;
+}
+#cheat2 {
+	background-color:rgba(255,255,255,0.05);
+	width:10px;
+}

@@ -433,6 +433,7 @@ document.getElementById('startgame').addEventListener('click', () => {
 		updateSpeed=setInterval(updateMap,20);
 		mapactive=true;
 		document.getElementById('startmenu').remove();
+		loadimgs();
 		mapmusic.play();
 	}
 	console.log(mapactive);
@@ -448,6 +449,25 @@ function startgame(){
 	clearInterval(updateSpeed);
 	updateSpeed=setInterval(updateMap,20);
 	mapactive=true;
+}
+
+function loadimgs(){
+	for(let i=0;i<8;i++){
+		preloadImage(herosprites[i]);
+		console.log(herosprites[i]+" loaded");
+	}
+	preloadImage("imgs/goblin.png");
+	preloadImage("imgs/skeleton.png");
+	preloadImage("imgs/wolf.png");
+	preloadImage("imgs/boss1.png");
+	preloadImage("imgs/boss.png");
+	preloadImage("imgs/gracias.png");
+	preloadImage("imgs/gameover.png");
+}
+
+function preloadImage(url){
+    var img=new Image();
+    img.src=url;
 }
 
 function updateMap(){
